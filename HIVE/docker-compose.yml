@@ -1,0 +1,42 @@
+version: '3'
+services:
+  db:
+    image: postgres:12
+    container_name: STEEM-HV-DB-PSQL
+    hostname: db
+    environment:
+      POSTGRES_USER: steem
+      POSTGRES_PASSWORD: steem123
+      POSTGRES_DB: hivedb
+    ports:
+      - "5432:5432"
+    volumes:
+      - /home/FULL-NODE/HIVE/data:/var/lib/postgresql/data
+      - /home/FULL-NODE/HIVE/my-postgres.conf:/etc/postgresql/postgresql.conf
+      - /home/FULL-NODE/HIVE/tmp:/tmp
+    networks:
+      - steem
+    restart: always
+
+  hive:
+    depends_on:
+      - db
+    image: steemit/hivemind:latest
+    container_name: STEEM-HIVEMIND
+    hostname: hive
+    environment:
+      DATABASE_URL: postgresql://steem:steem123@db:5432/hivedb
+      LOG_LEVEL: INFO
+      STEEMD_URL: http://jussi:8080 # Adjust as necessary for your full node API
+      SYNC_SERVICE: 1
+      MAX_BATCH: 50
+      MAX_WORKERS: 2
+    ports:
+      - "8093:8080"
+    networks:
+      - steem
+    restart: always
+
+networks:
+  steem:
+    external: true

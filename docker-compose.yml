@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   api:
-    image: steemit/steem:0.23.x-mira-ah
+    image: registry.gitlab.com/krishiv-g/steem-full-node-with-api-ah-hivemind
     container_name: STEEM-API
     hostname: api
     command: /usr/local/steemd/bin/steemd --data-dir /var/steem
@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
   
   ah:
-    image: steemit/steem:0.23.x-mira-ah
+    image: registry.gitlab.com/krishiv-g/steem-full-node-with-api-ah-hivemind
     container_name: STEEM-AH
     hostname: ah
     command: /usr/local/steemd/bin/steemd --data-dir /var/steem

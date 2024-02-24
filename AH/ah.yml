@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  ah:
+    image: registry.gitlab.com/krishiv-g/steem-full-node-with-api-ah-hivemind
+    container_name: STEEM-AH
+    command: /usr/local/steemd/bin/steemd --data-dir /var/steem
+    volumes:
+      - /home/FULL-NODE/AH:/var/steem
+    ports:
+      - "8092:8092"
+    restart: unless-stopped

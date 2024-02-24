@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  jussi:
+    image: steemit/jussi:latest
+    container_name: jussi_service
+    ports:
+      - "8080:8080"
+    volumes:
+      - /home/FULL-NODE/jussi/config.json:/app/config.json
+    environment:
+      - JUSSI_UPSTREAM_CONFIG_FILE=/app/config.json
+    stdin_open: true
+    tty: true
+    networks:
+      - steem
+
+networks:
+  steem:
+    external: true

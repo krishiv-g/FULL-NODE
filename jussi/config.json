@@ -48,79 +48,79 @@
           ],
           [
             "appbase.condenser_api.get_followers",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_following",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_follow_count",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_discussions_by_trending",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_discussions_by_hot",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_discussions_by_promoted",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_discussions_by_created",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_discussions_by_blog",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_discussions_by_feed",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_discussions_by_comments",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_replies_by_last_update",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_trending_tags",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_discussions_by_author_before_date",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_post_discussions_by_payout",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_comment_discussions_by_payout",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_blog",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_blog_entries",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_account_votes",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_state",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.condenser_api.get_state.params=['witnesses']",
@@ -140,11 +140,11 @@
           ],
           [
             "appbase.follow_api",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ],
           [
             "appbase.tags_api",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ]
         ],
         "ttls": [
@@ -265,7 +265,7 @@
         "urls": [
           [
             "hive",
-            "https://api.steemit.com"
+            "http://hive:8093"
           ]
         ],
         "ttls": [
